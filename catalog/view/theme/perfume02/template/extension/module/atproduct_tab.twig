@@ -1,0 +1,370 @@
+<div class="container no-space products-tab-{{ module }}">
+<div class="section_title">
+	<h1 class="fp_carousel-title">{{ heading_title }}</h1>
+</div>  
+  <div id="tabs-{{ module }}" class="htabs atproduct_tab">
+  	
+	<ul class="nav nav-tabs">
+
+	<li class="active"><a href="#tab-featured-{{ module }}" data-toggle="tab" class="selected"><h5>{{ tab_featured }}</h5></a></li>
+
+	{% if bestseller_products %}
+	<li><a href="#tab-bestseller-{{ module }}" data-toggle="tab"><h5>{{ tab_bestseller }}</h5></a></li>
+	{% endif %}
+	
+
+	{% if latest_products %}
+	<li><a href="#tab-latest-{{ module }}" data-toggle="tab"><h5>{{ tab_latest }}</h5></a></li>
+	{% endif %}
+
+	{% if special_products %}
+	<li><a href="#tab-special-{{ module }}" data-toggle="tab"><h5>{{ tab_special }}</h5></a></li>
+	{% endif %}
+
+	</ul>
+ </div>
+ 
+ <div class="tab-content">
+
+{% if latest_products %}
+ <div id="tab-latest-{{ module }}" class="tab-pane">
+    <div class="latest_products_carousel_tab product-item owl-carousel owl-theme" id="latest_products_carousel">
+      {% for product in latest_products %}
+      <div class="item">
+
+		  <div class="product-layout">
+
+			<div class="product-thumb transition">
+
+			  <div class="image product-image"><a href="{{ product.href }}">
+				<div class="p-over p-grid-over"> </div>
+				<div class="p-over p-grid-over1"> </div>
+				 <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+
+			  </a>
+
+              <div class="action">
+                   <div class="action_inner">
+                        <div class="button-group">
+                             <button type="button" class="wishlist_button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart-o"></i></button>
+                             <a href="{{ product.href }}"><button type="button" class="compare_button" data-toggle="tooltip" title="{{ button_compare }}"><i class="fa fa-eye"></i></button></a>
+      	                   	 <button type="button" onclick="cart.add('{{ product.product_id }}');" class="cart_text" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-cart-plus"></i></button>
+                        </div>
+                   </div> 
+              </div>
+
+			  </div>
+
+			  <div class="caption">
+
+				<h5><a href="{{ product.href }}">{{ product.name }}</a></h5>
+		        
+		        {% if product.price %}
+		        <p class="price">
+		          {% if not product.special %}
+		          {{ product.price }}
+		          {% else %}
+		          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+		          {% endif %}
+		          {% if product.tax %}
+		          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+		          {% endif %}
+		        </p>
+		        {% endif %}
+
+				{% if product.rating %}
+		        <div class="rating">
+		          {% for i in 1..5 %}
+		          {% if product.rating < i %}
+		          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% else %}
+		          <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% endif %}
+		          {% endfor %}
+		        </div>
+		        {% endif %}
+
+
+			  </div>
+
+			</div>
+
+		  </div>
+
+      </div>
+
+        {% endfor %}
+    </div>
+ </div>
+{% endif %}
+
+{% if featured_products %}
+  <div id="tab-featured-{{ module }}" class="tab-pane active">
+   <div class="featured_products_carousel_tab product-item owl-carousel owl-theme" id="featured_products_carousel">
+   
+      {% for product in featured_products %}
+
+      <div class="item">
+		<div class="product-layout">
+			<div class="product-thumb transition">
+				<div class="image product-image"><a href="{{ product.href }}">
+				<div class="p-over p-grid-over"> </div>
+				<div class="p-over p-grid-over1"> </div>
+				 <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+				</a>
+
+			   <div class="action">
+					<div class="action_inner">
+					    <div class="button-group">
+					          <button type="button" class="wishlist_button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart-o"></i></button>
+					          <a href="{{ product.href }}"><button type="button" class="compare_button" data-toggle="tooltip" title="{{ button_compare }}"><i class="fa fa-eye"></i></button></a>
+					      	  <!--<button type="button" onclick="cart.add('{{ product.product_id }}');" class="cart_text" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-cart-plus"></i></button>-->
+					      	   <a href="{{ product.href }}"><button type="button" class="addcart_button" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-cart-plus"></i></button></a>
+					    </div>
+					</div> 
+				</div>
+
+			  </div>
+
+			  <div class="caption">
+
+				<h5><a href="{{ product.href }}">{{ product.name }}</a></h5>
+		        
+		        {% if product.price %}
+		        <p class="price">
+		          {% if not product.special %}
+		          {{ product.price }}
+		          {% else %}
+		          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+		          {% endif %}
+		          {% if product.tax %}
+		          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+		          {% endif %}
+		        </p>
+		        {% endif %}
+
+				{% if product.rating %}
+		        <div class="rating">
+		          {% for i in 1..5 %}
+		          {% if product.rating < i %}
+		          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% else %}
+		          <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% endif %}
+		          {% endfor %}
+		        </div>
+		        {% endif %}
+
+			  </div>
+
+			</div>
+
+		  </div>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+ </div>
+{% endif %}
+
+{% if bestseller_products %}
+ <div id="tab-bestseller-{{ module }}" class="tab-pane">
+     <div class="bestseller_products_carousel_tab product-item owl-carousel owl-theme" id="bestseller_products_carousel">
+      {% for product in bestseller_products %}
+      <div class="item">
+		<div class="product-layout">
+			<div class="product-thumb transition">
+				<div class="image product-image"><a href="{{ product.href }}">
+				<div class="p-over p-grid-over"> </div>
+				<div class="p-over p-grid-over1"> </div>
+				 <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+				</a>
+
+			    <div class="action">
+				    <div class="action_inner">
+				        <div class="button-group">
+				          	<button type="button" class="wishlist_button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart-o"></i></button>
+				          	<a href="{{ product.href }}"><button type="button" class="compare_button" data-toggle="tooltip" title="{{ button_compare }}"><i class="fa fa-eye"></i></button></a>
+				      	  	<button type="button" onclick="cart.add('{{ product.product_id }}');" class="cart_text" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-cart-plus"></i></button>
+				      	</div>
+				    </div> 
+                </div>
+
+			  </div>
+
+			  <div class="caption">
+
+				<h5><a href="{{ product.href }}">{{ product.name }}</a></h5>
+		        
+		        {% if product.price %}
+		        <p class="price">
+		          {% if not product.special %}
+		          {{ product.price }}
+		          {% else %}
+		          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+		          {% endif %}
+		          {% if product.tax %}
+		          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+		          {% endif %}
+		        </p>
+		        {% endif %}
+
+				{% if product.rating %}
+		        <div class="rating">
+		          {% for i in 1..5 %}
+		          {% if product.rating < i %}
+		          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% else %}
+		          <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% endif %}
+		          {% endfor %}
+		        </div>
+		        {% endif %}
+
+			  </div>
+
+			</div>
+
+		  </div>
+
+      </div>
+
+        {% endfor %}
+    </div>
+ </div>
+{% endif %}
+
+{% if special_products %}
+ <div id="tab-special-{{ module }}" class="tab-pane">
+     <div class="special_products_carousel_tab product-item owl-carousel owl-theme" id="special_products_carousel">
+      {% for product in special_products %}
+      <div class="item">
+		<div class="product-layout">
+			<div class="product-thumb transition">
+				<div class="image product-image"><a href="{{ product.href }}">
+				<div class="p-over p-grid-over"> </div>
+				<div class="p-over p-grid-over1"> </div>
+				 <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+				</a>
+
+			    <div class="action">
+				    <div class="action_inner">
+				        <div class="button-group">
+				          	<button type="button" class="wishlist_button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart-o"></i></button>
+				          	<a href="{{ product.href }}"><button type="button" class="compare_button" data-toggle="tooltip" title="{{ button_compare }}"><i class="fa fa-eye"></i></button></a>
+				      	  	<button type="button" onclick="cart.add('{{ product.product_id }}');" class="cart_text" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-cart-plus"></i></button>
+				     	</div>
+				    </div> 
+                </div>
+
+			  </div>
+
+			  <div class="caption">
+
+				<h5><a href="{{ product.href }}">{{ product.name }}</a></h5>
+		        
+		        {% if product.price %}
+		        <p class="price">
+		          {% if not product.special %}
+		          {{ product.price }}
+		          {% else %}
+		          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+		          {% endif %}
+		          {% if product.tax %}
+		          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+		          {% endif %}
+		        </p>
+		        {% endif %}
+
+				{% if product.rating %}
+		        <div class="rating">
+		          {% for i in 1..5 %}
+		          {% if product.rating < i %}
+		          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% else %}
+		          <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+		          {% endif %}
+		          {% endfor %}
+		        </div>
+		        {% endif %}
+
+			  </div>
+
+			</div>
+
+		  </div>
+
+      </div>
+
+      {% endfor %}
+		
+    </div>
+ </div>
+{% endif %}
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.featured_products_carousel_tab').owlCarousel({
+	items: 6, 
+	itemsDesktop : [1199,6],
+	itemsDesktopSmall : [979,2],
+	autoWidth:true,
+	pagination: false,
+	navigation:true,
+	navigationText: [
+		"<i class='fa fa-angle-left'></i>",
+		"<i class='fa fa-angle-right'></i>"
+	],
+	});
+
+$('.latest_products_carousel_tab').owlCarousel({
+	items: 6, 
+	itemsDesktop : [1199,6],
+	itemsDesktopSmall : [979,2],
+	autoWidth:true,
+	pagination: false,
+	navigation:true,
+	navigationText: [
+		"<i class='fa fa-angle-left'></i>",
+		"<i class='fa fa-angle-right'></i>"
+	],
+	});
+
+$('.bestseller_products_carousel_tab').owlCarousel({
+	items: 6, 
+	itemsDesktop : [1199,5],
+	itemsDesktopSmall : [979,2],
+	autoWidth:true,
+	pagination: false,
+	navigation:true,
+	navigationText: [
+		"<i class='fa fa-angle-left'></i>",
+		"<i class='fa fa-angle-right'></i>"
+	],
+	});
+
+$('.special_products_carousel_tab').owlCarousel({
+	items: 6, 
+	itemsDesktop : [1199,5],
+	itemsDesktopSmall : [979,2],
+	autoWidth:true,
+	pagination: false,
+	navigation:true,
+	navigationText: [
+		"<i class='fa fa-angle-left'></i>",
+		"<i class='fa fa-angle-right'></i>"
+	],
+	});
+
+
+});
+
+</script>
+
+<div class="clear"></div>

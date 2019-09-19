@@ -1,0 +1,87 @@
+<footer>
+   <div class="container footer_center">
+   <div class="row">
+         {% if atfooter %}
+            {{ atfooter }}
+         {% else %}
+         <div class="col-sm-3 footer_column">
+            <h4 class="footer-title"><img src="catalog/view/theme/perfume02/image/custom/footer_logo.png" alt="footerlogo"></h4>
+            <hr class="footer_border">
+            <div class="footeraboutcontent">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis mauris nec erat auctor, maximus aliquet quam interdum. Nulla auctor turpis et sem maximus venenatis.
+            </div>
+            <div class="social-link">
+               <ul class="list-inline">
+                  <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                  <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-rss"></i></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-sm-3 footer_column">
+            <h4 class="footer-title footer_padding">{{ text_account }}</h4>
+            <hr class="footer_border">
+            <ul class="list-unstyled">
+               <li><a href="{{ account }}">{{ text_account }}</a></li>
+               <li><a href="{{ order }}">{{ text_order }}</a></li>
+               <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+               <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+            </ul>
+         </div>
+         {% if informations %}
+         <div class="col-sm-3 footer_column">
+            <h4 class="footer-title footer_padding">{{ text_information }}</h4>
+            <hr class="footer_border">
+            <ul class="list-unstyled">            
+             {% for information in informations %}
+              <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+              {% endfor %}
+            </ul>
+         </div>
+         {% endif %}         
+         <div class="col-sm-3 footer_column">
+            <h4 class="footer-title footer_padding">Contact Us</h4>
+            <hr class="footer_border">
+            <div class="contact_footer">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               <div class="footer_icon">
+                  <div><i class="fa fa-home" aria-hidden="true"></i>{{ store_name }}</div>
+                  <div><i class="fa fa-paper-plane" aria-hidden="true"></i>{{ store_address }}</div>
+                  <div><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:{{ store_email_id }}">{{ store_email_id }}</a></div>
+                  <div><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:{{ store_phone_no }}">{{ store_phone_no }}</a></div>
+               </div>
+          </div>
+        {% endif %}   
+      </div>
+  </div>
+   <div class="footer_bottom_outer">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerbottom_link">
+               <div class="card">
+                  <ul class="list-inline">
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-1.png" alt="Paypal"></li>
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-2.png" alt="Discover"></li>
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-3.png" alt="JBC"></li>
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-4.png" alt="Amazon"></li>
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-5.png" alt="Mastro"></li>
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-6.png" alt="Master"></li>
+                     <li><img class="img-responsive" src="catalog/view/theme/perfume02/image/custom/cards/card-7.png" alt="Visa"></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div class="copyright">
+                  <p>{{ powered }}. Made with  <i class="fa fa-heart"></i> by <a href="https://www.multipurposethemes.com/" style="color:rgba(255,255,255,0.7)">Multipurposethemes.</a></p>
+               </div>
+            </div>            
+         </div>
+      </div>
+   </div>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+</body></html>

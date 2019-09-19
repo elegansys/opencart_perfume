@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="{{ direction }}" lang="{{ lang }}">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ title }}</title>
+<base href="{{ base }}" />
+{% if description %}
+<meta name="description" content="{{ description }}" />
+{% endif %}
+{% if keywords %}
+<meta name="keywords" content="{{ keywords }}" />
+{% endif %}
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript" defer="defer"></script>
+<script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.css" rel="stylesheet" media="screen" />
+<link href="catalog/view/javascript/jquery/owl-carousel/owl.transitions.css" rel="stylesheet" media="screen" />
+<script src="catalog/view/javascript/at/jquery.custom.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/at/custom.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Montserrat|Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="catalog/view/theme/perfume02/stylesheet/atstyle.css" rel="stylesheet">
+{% for style in styles %}
+<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+{% endfor %}
+<script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+{% for link in links %}
+<link href="{{ link.href }}" rel="{{ link.rel }}" />
+{% endfor %}
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+{% for analytic in analytics %}
+{{ analytic }}
+{% endfor %}
+<link href="catalog/view/javascript/so_megamenu/so_megamenu.css" rel="stylesheet" type="text/css" />
+<link href="catalog/view/javascript/so_megamenu/wide-grid.css" rel="stylesheet" type="text/css" />
+<script src="catalog/view/javascript/so_megamenu/so_megamenu.js" type="text/javascript"></script>
+</head>
+<body class="{{ class }}"> 
+<header>
+   <div class="header_outer">
+      <div class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-5 col-xs-12">
+             {% if atheader %}
+                {{ atheader }}
+              {% else %}
+                  {% if store_phone_no %}
+                    Call on <a href="tel:{{ store_phone_no }}">{{ store_phone_no }}</a> or 
+                  {% endif %}
+                  {% if store_email_id %}
+                    <a href="mailto:{{ store_email_id }}">{{ store_email_id }}</a> 
+                  {% endif %}  
+              {% endif %}
+            </div>
+            <div class="col-sm-2 col-xs-12 at-text-center">
+              <div id="logo">
+                  {% if logo %}
+                  <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>
+                  {% else %}
+                  <h1><a href="{{ home }}">{{ name }}</a></h1>
+                  {% endif %}  
+               </div>
+            </div>
+            <div class="col-sm-5 col-xs-12 header_right">
+              <div class="menu_right cart">
+                 
+                 {{ language }}
+                 {% if currency != '' %}<span class='menu-separator'>/</span>{% endif %} 
+                 {{ currency }}
+                 <div class="btn-group manage-links">
+                 {% if logged %}
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                     {{ text_account }}</button>
+                     <ul class="dropdown-menu">
+                       <li><a href="{{ account }}">{{ text_account }}</a></li>
+                       <li><a href="{{ logout }}">{{ text_logout }}</a></li>
+                     </ul>
+                 {% else %}
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                     {{ text_login }} / {{ text_register }} </button>
+                     <ul class="dropdown-menu">
+                       <li><a href="{{ login }}">{{ text_login }}</a></li>
+                       <li><a href="{{ register }}">{{ text_register }}</a></li>
+                     </ul>
+                 {% endif %}
+                 </div>
+                 <span class="whishlist"><a href="{{ wishlist }}">{{ text_wishlist }}</a></span>
+                 <a class="search_toggle"><i class="fa fa-search"></i></a>
+                 {{ search }}
+                 {{ cart }}               
+              </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="menu_outer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="col-md-12 col-xs-2 no-space">
+                  {% if megamenu %}
+                  <div class="megamenu">
+                    {{ megamenu }}
+                  </div>
+                  {% else %}  
+                    {{ menu }}
+                  {% endif %}  
+                  </div>
+                  <div class="col-md-3 col-xs-10 showonmobile">
+                   <div class="menu_right">
+                         {% if logged %}
+                         <a href="{{ wishlist }}">{{ text_wishlist }}</a><span class="menu-separator">/</span>
+                         <a href="{{ account }}">{{ text_account }}</a><span class="menu-separator">/</span>
+                         <a href="{{ logout }}">{{ text_logout }}</a>
+                         {% else %}
+                         <a href="{{ wishlist }}">{{ text_wishlist }}</a><span class="menu-separator">/</span>
+                         <a href="{{ register }}">{{ text_register }}</a><span class="menu-separator">/</span>
+                         <a href="{{ login }}">{{ text_login }}</a>
+                         {% endif %}
+                   </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>

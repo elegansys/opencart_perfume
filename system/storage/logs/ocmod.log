@@ -1,0 +1,520 @@
+2019-09-19 6:18:16 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Disable Important Security Notification
+
+FILE: admin/controller/common/dashboard.php
+CODE: $data['security'] = $this->load->controller('common/security');
+LINE: 79
+----------------------------------------------------------------
+2019-09-19 6:18:45 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Disable Important Security Notification
+
+FILE: admin/controller/common/dashboard.php
+CODE: $data['security'] = $this->load->controller('common/security');
+LINE: 79
+----------------------------------------------------------------
+MOD: Native Lazyload
+
+FILE: catalog/view/theme/default/template/extension/module/featured.twig
+CODE: src="{{ product.thumb }}"
+LINE: 5
+
+FILE: catalog/view/theme/default/template/extension/module/latest.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/default/template/extension/module/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/default/template/extension/module/bestseller.twig
+CODE: src="{{ product.thumb }}"
+LINE: 5
+
+FILE: catalog/view/theme/default/template/extension/module/ebay_listing.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: src="{{ product.thumb }}"
+LINE: 311
+
+FILE: catalog/view/theme/default/template/product/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/default/template/product/category.twig
+CODE: src="{{ product.thumb }}"
+LINE: 130
+
+FILE: catalog/view/theme/default/template/product/search.twig
+CODE: src="{{ product.thumb }}"
+LINE: 115
+
+FILE: catalog/view/theme/default/template/product/manufacturer_info.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/default/template/product/compare.twig
+CODE: src="{{ product.thumb }}"
+LINE: 38
+
+FILE: catalog/view/theme/default/template/account/wishlist.twig
+CODE: src="{{ product.thumb }}"
+LINE: 39
+
+FILE: catalog/view/theme/default/template/checkout/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 52
+
+FILE: catalog/view/theme/default/template/common/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 8
+CODE: src="{{ thumb }}"
+LINE: 24
+CODE: src="{{ image.thumb }}"
+LINE: 30
+----------------------------------------------------------------
+2019-09-19 7:35:10 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Clean Opencart Blog
+
+FILE: admin/controller/common/column_left.php
+CODE: // Stats
+LINE: 700
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($query->row['query'] && $url[0]
+LINE: 52
+CODE: != 'category_id' && $url[0]
+LINE: 52
+CODE: $this->request->get['route'] = 'product/product';
+LINE: 72
+CODE: $this->request->get['route'] = 'product/category';
+LINE: 78
+CODE: ($data['route'] == 'information/information' && $key == 'information_id'))
+LINE: 99
+CODE: } elseif ($key == 'path') {
+LINE: 129
+
+FILE: catalog/controller/common/content_top.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: catalog/controller/common/content_bottom.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: catalog/controller/common/column_left.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: catalog/controller/common/column_right.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+----------------------------------------------------------------
+MOD: Native Lazyload
+
+FILE: catalog/view/theme/default/template/extension/module/featured.twig
+CODE: src="{{ product.thumb }}"
+LINE: 5
+
+FILE: catalog/view/theme/perfume02/template/extension/module/featured.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/latest.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/perfume02/template/extension/module/latest.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/perfume02/template/extension/module/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/bestseller.twig
+CODE: src="{{ product.thumb }}"
+LINE: 5
+
+FILE: catalog/view/theme/perfume02/template/extension/module/bestseller.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/ebay_listing.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/perfume02/template/extension/module/ebay_listing.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: src="{{ product.thumb }}"
+LINE: 311
+
+FILE: catalog/view/theme/perfume02/template/product/product.twig
+CODE: src="{{ product.thumb }}"
+LINE: 842
+
+FILE: catalog/view/theme/default/template/product/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/perfume02/template/product/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/default/template/product/category.twig
+CODE: src="{{ product.thumb }}"
+LINE: 130
+
+FILE: catalog/view/theme/perfume02/template/product/category.twig
+CODE: src="{{ product.thumb }}"
+LINE: 116
+
+FILE: catalog/view/theme/default/template/product/search.twig
+CODE: src="{{ product.thumb }}"
+LINE: 115
+
+FILE: catalog/view/theme/perfume02/template/product/search.twig
+CODE: src="{{ product.thumb }}"
+LINE: 119
+
+FILE: catalog/view/theme/default/template/product/manufacturer_info.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/perfume02/template/product/manufacturer_info.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/default/template/product/compare.twig
+CODE: src="{{ product.thumb }}"
+LINE: 38
+
+FILE: catalog/view/theme/perfume02/template/product/compare.twig
+CODE: src="{{ product.thumb }}"
+LINE: 38
+
+FILE: catalog/view/theme/default/template/account/wishlist.twig
+CODE: src="{{ product.thumb }}"
+LINE: 39
+
+FILE: catalog/view/theme/perfume02/template/account/wishlist.twig
+CODE: src="{{ product.thumb }}"
+LINE: 39
+
+FILE: catalog/view/theme/default/template/checkout/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 52
+
+FILE: catalog/view/theme/perfume02/template/checkout/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 52
+
+FILE: catalog/view/theme/default/template/common/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 8
+
+FILE: catalog/view/theme/perfume02/template/common/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 9
+CODE: src="{{ thumb }}"
+LINE: 24
+CODE: src="{{ image.thumb }}"
+LINE: 30
+CODE: src="{{ thumb }}"
+LINE: 61
+CODE: src="{{ image.thumb }}"
+LINE: 72
+----------------------------------------------------------------
+2019-09-19 7:36:08 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Clean Opencart Blog
+
+FILE: admin/controller/common/column_left.php
+CODE: // Stats
+LINE: 700
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($query->row['query'] && $url[0]
+LINE: 52
+CODE: != 'category_id' && $url[0]
+LINE: 52
+CODE: $this->request->get['route'] = 'product/product';
+LINE: 72
+CODE: $this->request->get['route'] = 'product/category';
+LINE: 78
+CODE: ($data['route'] == 'information/information' && $key == 'information_id'))
+LINE: 99
+CODE: } elseif ($key == 'path') {
+LINE: 129
+
+FILE: catalog/controller/common/content_top.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: catalog/controller/common/content_bottom.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: catalog/controller/common/column_left.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: catalog/controller/common/column_right.php
+CODE: $layout_id = 0;
+LINE: 17
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+----------------------------------------------------------------
+MOD: Disable Important Security Notification
+
+FILE: admin/controller/common/dashboard.php
+CODE: $data['security'] = $this->load->controller('common/security');
+LINE: 79
+----------------------------------------------------------------
+MOD: Native Lazyload
+
+FILE: catalog/view/theme/default/template/extension/module/featured.twig
+CODE: src="{{ product.thumb }}"
+LINE: 5
+
+FILE: catalog/view/theme/perfume02/template/extension/module/featured.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/latest.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/perfume02/template/extension/module/latest.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/perfume02/template/extension/module/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/bestseller.twig
+CODE: src="{{ product.thumb }}"
+LINE: 5
+
+FILE: catalog/view/theme/perfume02/template/extension/module/bestseller.twig
+CODE: src="{{ product.thumb }}"
+LINE: 21
+
+FILE: catalog/view/theme/default/template/extension/module/ebay_listing.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/perfume02/template/extension/module/ebay_listing.twig
+CODE: src="{{ product.thumb }}"
+LINE: 4
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: src="{{ product.thumb }}"
+LINE: 311
+
+FILE: catalog/view/theme/perfume02/template/product/product.twig
+CODE: src="{{ product.thumb }}"
+LINE: 842
+
+FILE: catalog/view/theme/default/template/product/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/perfume02/template/product/special.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/default/template/product/category.twig
+CODE: src="{{ product.thumb }}"
+LINE: 130
+
+FILE: catalog/view/theme/perfume02/template/product/category.twig
+CODE: src="{{ product.thumb }}"
+LINE: 116
+
+FILE: catalog/view/theme/default/template/product/search.twig
+CODE: src="{{ product.thumb }}"
+LINE: 115
+
+FILE: catalog/view/theme/perfume02/template/product/search.twig
+CODE: src="{{ product.thumb }}"
+LINE: 119
+
+FILE: catalog/view/theme/default/template/product/manufacturer_info.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/perfume02/template/product/manufacturer_info.twig
+CODE: src="{{ product.thumb }}"
+LINE: 72
+
+FILE: catalog/view/theme/default/template/product/compare.twig
+CODE: src="{{ product.thumb }}"
+LINE: 38
+
+FILE: catalog/view/theme/perfume02/template/product/compare.twig
+CODE: src="{{ product.thumb }}"
+LINE: 38
+
+FILE: catalog/view/theme/default/template/account/wishlist.twig
+CODE: src="{{ product.thumb }}"
+LINE: 39
+
+FILE: catalog/view/theme/perfume02/template/account/wishlist.twig
+CODE: src="{{ product.thumb }}"
+LINE: 39
+
+FILE: catalog/view/theme/default/template/checkout/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 52
+
+FILE: catalog/view/theme/perfume02/template/checkout/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 52
+
+FILE: catalog/view/theme/default/template/common/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 8
+
+FILE: catalog/view/theme/perfume02/template/common/cart.twig
+CODE: src="{{ product.thumb }}"
+LINE: 9
+CODE: src="{{ thumb }}"
+LINE: 24
+CODE: src="{{ image.thumb }}"
+LINE: 30
+CODE: src="{{ thumb }}"
+LINE: 61
+CODE: src="{{ image.thumb }}"
+LINE: 72
+----------------------------------------------------------------

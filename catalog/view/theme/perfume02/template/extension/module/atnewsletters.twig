@@ -1,0 +1,79 @@
+<script tyle="text/javascript">
+function subscribe(){
+		var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		var email = $('#txtemail').val();
+		if(email != ""){
+			if(!emailpattern.test(email))
+			{
+				alert("Invalid Email");
+				$('#txtemail').val("");
+				$('#txtemail').focus();
+				return false;
+
+			}else{
+				$.ajax({
+					url: 'index.php?route=extension/module/atnewsletters/subscribe',
+					type: 'post',
+					data: 'email=' + $('#txtemail').val(),
+					dataType: 'json',
+					success: function(json) { alert(json.message);}
+				});
+				$('#txtemail').val("");
+				return false;
+			}
+		}else{
+
+			alert("Email Is Require");
+			$(email).focus();
+			return false;
+		}
+}
+</script>
+
+<div class="newsletter_section">
+
+    <div class="container">
+
+        <div class="row">
+
+        	<div class="col-md-6 col-sm-6 col-xs-12 newsletter_left">
+
+				<div class="newsletter_title f-24">{{ heading_title }}</div>
+                <div class="newsletter_text">{{ offer_text }}</div>
+
+        	</div>
+
+           
+
+            <div class="col-md-6 col-sm-6 col-xs-12 newsletter_right">
+
+                <div id="advanced-atnewsletter-box">
+
+                    <h2 class="heading-title"><span>Subscribe to us</span></h2>
+
+                    <div class="input-group box-atnewsletter-subscribe newsletter" id="mail-box">
+
+                        <form action="/" method="post" class="form-inline">
+
+                            <div class="form-group required">
+
+                                <input type="email" name="txtemail" id="txtemail" value="" placeholder="{{ text_placeholder_input }}" class="form-control input-lg">
+
+                                <button type="submit" class="btn btn-default btn-lg" onclick="return subscribe();">
+                                    Subscribe                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

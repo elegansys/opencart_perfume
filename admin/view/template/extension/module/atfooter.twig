@@ -1,0 +1,455 @@
+{{ header }}{{ column_left }}
+
+
+
+<div id="content">
+
+
+
+  <div class="page-header">
+
+
+
+    <div class="container-fluid">
+
+
+
+      <div class="pull-right">
+
+
+
+        <button type="submit" form="form-html" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+
+
+
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+
+
+
+      <h1>{{ heading_title }}</h1>
+
+
+
+      <ul class="breadcrumb">
+
+
+
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+
+
+      </ul>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="container-fluid">
+
+
+
+   {% if error_warning %}
+
+
+
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+
+
+
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+
+
+    </div>
+
+
+
+    {% endif %}
+
+
+
+    <div class="panel panel-default">
+
+
+
+      <div class="panel-heading">
+
+
+
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+
+
+
+      </div>
+
+
+
+      <div class="panel-body">
+
+
+
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-html" class="form-horizontal">
+
+
+
+          <div class="form-group">
+
+
+
+            <label class="col-sm-2 control-label" for="input-name">{{ entry_name }}</label>
+
+
+
+            <div class="col-sm-10">
+
+
+
+              <input type="text" name="name" value="{{ name }}" placeholder="{{ entry_name }}" id="input-name" class="form-control" />
+
+
+
+              {% if error_name %}
+
+
+
+              <div class="text-danger">{{ error_name }}</div>
+
+
+
+              {% endif %}
+
+
+
+            </div>
+
+
+
+          </div>        
+
+
+
+		  
+
+
+
+		    <div class="form-group">
+
+
+
+            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+
+
+
+            <div class="col-sm-10">
+
+
+
+              <select name="status" id="input-status" class="form-control">
+                {% if status %}
+                <option value="1" selected="selected">{{ text_enabled }}</option>
+                <option value="0">{{ text_disabled }}</option>
+                {% else %}
+                <option value="1">{{ text_enabled }}</option>
+                <option value="0" selected="selected">{{ text_disabled }}</option>
+                {% endif %}
+              </select>
+
+
+            </div>
+
+
+
+          </div>
+
+
+
+		 
+
+
+
+          <div class="tab-pane">
+
+
+
+            <ul class="nav nav-tabs" id="language">
+
+
+              {% for language in languages %}
+              <li><a href="#language{{ language.language_id }}" data-toggle="tab"><img src="language/{{ language.code }}/{{ language.code }}.png" title="{{ language.name }}" /> {{ language.name }}</a></li>
+              {% endfor %}
+
+
+
+            </ul>
+
+
+
+            <div class="tab-content">
+
+
+
+              {% for language in languages %}
+
+
+
+			 
+
+
+
+              <div class="tab-pane" id="language{{ language.language_id }}">
+
+
+
+			  
+
+
+
+                <div class="form-group">
+
+
+
+                  <label class="col-sm-2 control-label" for="input-title{{ language.language_id }}">{{ entry_title }}</label>
+
+
+
+                  <div class="col-sm-10">
+
+
+
+                    <input type="text" name="module_description[{{ language.language_id }}][title]" placeholder="{{ entry_title }}" id="input-heading{{ language.language_id }}" value="{{ module_description[language.language_id] ? module_description[language.language_id].title }}" class="form-control" />
+
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+				
+
+
+
+				 <ul class="nav nav-tabs" id="tabs">
+
+
+
+				 <li class="active"><a href="#tab1{{ language.language_id }}" data-toggle="tab">{{ entry_Column1 }}</a></li>
+
+				 <li class=""><a href="#tab2{{ language.language_id }}" data-toggle="tab">{{ entry_Column2 }}</a></li>	
+
+         <li class=""><a href="#tab3{{ language.language_id }}" data-toggle="tab">{{ entry_Column3 }}</a></li> 
+
+         <li class=""><a href="#tab4{{ language.language_id }}" data-toggle="tab">{{ entry_Column4 }}</a></li>                   
+
+				 </ul>
+
+
+
+				  <div class="tab-content">
+
+
+
+				  
+
+
+
+				   <div class="tab-pane active" id="tab1{{ language.language_id }}">
+
+
+
+                <div class="form-group">
+
+
+
+                  <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description1 }}</label>
+
+
+
+                  <div class="col-sm-10">
+
+
+
+                    <textarea name="module_description1[{{ language.language_id }}][description1]" placeholder="{{ entry_description1 }}" id="input-description1{{ language.language_id }}" data-toggle="summernote" class="form-control">{{ module_description1[language.language_id].description1 ? module_description1[language.language_id].description1 }}</textarea>
+
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+				</div>
+
+				
+
+				<div class="tab-pane" id="tab2{{ language.language_id }}">
+
+
+
+                <div class="form-group">
+
+
+
+                  <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description2 }}</label>
+
+
+
+                  <div class="col-sm-10">
+
+
+
+                    <textarea name="module_description2[{{ language.language_id }}][description2]" placeholder="{{ entry_description2 }}" id="input-description2{{ language.language_id }}" data-toggle="summernote" class="form-control">{{ module_description2[language.language_id].description2 ? module_description2[language.language_id].description2 }}</textarea>
+
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+				</div>
+
+
+        <div class="tab-pane" id="tab3{{ language.language_id }}">
+
+
+
+                <div class="form-group">
+
+
+
+                  <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description3 }}</label>
+
+
+
+                  <div class="col-sm-10">
+
+
+
+                    <textarea name="module_description3[{{ language.language_id }}][description3]" placeholder="{{ entry_description3 }}" id="input-description3{{ language.language_id }}" data-toggle="summernote" class="form-control">{{ module_description3[language.language_id].description3 ? module_description3[language.language_id].description3 }}</textarea>
+
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+        </div>       
+
+
+        <div class="tab-pane" id="tab4{{ language.language_id }}">
+
+
+
+                <div class="form-group">
+
+
+
+                  <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description4 }}</label>
+
+
+
+                  <div class="col-sm-10">
+
+
+
+                    <textarea name="module_description4[{{ language.language_id }}][description4]" placeholder="{{ entry_description4 }}" id="input-description4{{ language.language_id }}" data-toggle="summernote" class="form-control">{{ module_description4[language.language_id].description4 ? module_description4[language.language_id].description4 }}</textarea>
+
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+        </div>  
+
+	
+			</div>
+
+     </div>
+
+
+              {% endfor %}
+
+            </div>
+
+          </div>
+
+
+        </form>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+<link href="view/javascript/codemirror/lib/codemirror.css" rel="stylesheet" />
+<link href="view/javascript/codemirror/theme/monokai.css" rel="stylesheet" />
+<script type="text/javascript" src="view/javascript/codemirror/lib/codemirror.js"></script> 
+<script type="text/javascript" src="view/javascript/codemirror/lib/xml.js"></script> 
+<script type="text/javascript" src="view/javascript/codemirror/lib/formatting.js"></script> 
+  
+<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+<link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
+<script type="text/javascript" src="view/javascript/summernote/summernote-image-attributes.js"></script>
+<script type="text/javascript" src="view/javascript/summernote/opencart.js"></script>
+
+
+<script type="text/javascript"><!--
+
+
+
+{% for language in languages %}
+
+$('#input-description1{{ language.language_id }}').summernote({height: 200});
+$('#input-description2{{ language.language_id }}').summernote({height: 200});
+$('#input-description3{{ language.language_id }}').summernote({height: 200});
+$('#input-description4{{ language.language_id }}').summernote({height: 200});
+
+{% endfor %}
+
+
+//--></script> 
+
+
+  <script type="text/javascript"><!--
+
+
+
+$('#language a:first').tab('show');
+
+
+
+//--></script></div>
+
+
+
+{{ footer }}
