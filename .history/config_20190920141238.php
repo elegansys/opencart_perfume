@@ -29,7 +29,7 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'perrume');
-define('DB_PASSWORD', 'bs+hJLWZ;X{{');
+define('DB_PASSWORD', '');
 define('DB_DATABASE', 'perfume');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

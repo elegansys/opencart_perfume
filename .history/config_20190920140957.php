@@ -11,9 +11,9 @@ define('HTTPS_SERVER', 'https://'.$_SERVER['SERVER_NAME'].'/');
 
 
 // DIR
-define('DIR_APPLICATION', '/home/imarahtech/public_html/perfume/catalog/');
-define('DIR_SYSTEM', '/home/imarahtech/public_html/perfume/system/');
-define('DIR_IMAGE', '/home/imarahtech/public_html/perfume/image/');
+define('DIR_APPLICATION', 'C:/xampp123/htdocs/git/perfume/catalog/');
+define('DIR_SYSTEM', 'C:/xampp123/htdocs/git/perfume/system/');
+define('DIR_IMAGE', 'C:/xampp123/htdocs/git/perfume/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
@@ -28,8 +28,8 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'perrume');
-define('DB_PASSWORD', 'bs+hJLWZ;X{{');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
 define('DB_DATABASE', 'perfume');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

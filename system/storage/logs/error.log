@@ -4,3 +4,140 @@
 2019-09-19 7:25:55 - PHP Unknown:  Methods with the same name as their class will not be constructors in a future version of PHP; Cache_Lite has a deprecated constructor in C:\xampp123\htdocs\git\perfume\system\library\so\megamenu\Cache_Lite\Lite.php on line 29
 2019-09-19 7:27:30 - PHP Unknown:  Methods with the same name as their class will not be constructors in a future version of PHP; Cache_Lite has a deprecated constructor in C:\xampp123\htdocs\git\perfume\system\library\so\megamenu\Cache_Lite\Lite.php on line 29
 2019-09-19 7:27:34 - PHP Unknown:  Methods with the same name as their class will not be constructors in a future version of PHP; Cache_Lite has a deprecated constructor in C:\xampp123\htdocs\git\perfume\system\library\so\megamenu\Cache_Lite\Lite.php on line 29
+2019-09-19 10:10:54 - PHP Warning:  unlink(C:/xampp123/htdocs/git/perfume/system/storage/cache/cache.admin.language.1568891454): No such file or directory in C:\xampp123\htdocs\git\perfume\system\library\cache\file.php on line 68
+2019-09-20 6:17:16 - PHP Notice:  Undefined index: label_item in C:\xampp123\htdocs\git\perfume\admin\model\extension\module\so_megamenu.php on line 98
+2019-09-20 6:17:16 - PHP Notice:  Undefined index: icon_font in C:\xampp123\htdocs\git\perfume\admin\model\extension\module\so_megamenu.php on line 98
+2019-09-20 6:17:16 - PHP Notice:  Undefined index: class_menu in C:\xampp123\htdocs\git\perfume\admin\model\extension\module\so_megamenu.php on line 98
+2019-09-20 6:17:16 - PHP Notice:  Undefined index: label_item in C:\xampp123\htdocs\git\perfume\admin\model\extension\module\so_megamenu.php on line 98
+2019-09-20 6:17:16 - PHP Notice:  Undefined index: icon_font in C:\xampp123\htdocs\git\perfume\admin\model\extension\module\so_megamenu.php on line 98
+2019-09-20 6:17:16 - PHP Notice:  Undefined index: class_menu in C:\xampp123\htdocs\git\perfume\admin\model\extension\module\so_megamenu.php on line 98
+2019-09-20 6:23:11 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp123\htdocs\git\perfume\system\library\mail\mail.php on line 77
+2019-09-20 6:23:13 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp123\htdocs\git\perfume\system\library\mail\mail.php on line 77
+2019-09-20 8:24:21 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:28 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:28 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:28 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:36 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:39 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:40 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:40 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:40 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:45 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:45 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:45 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:50 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:50 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:50 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:58 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:24:58 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:24:58 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:01 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:01 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:01 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:05 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:09 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:11 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:11 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:14 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:14 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:14 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:23 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:23 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:23 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:29 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:29 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:29 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:34 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:40 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:40 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:40 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:44 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:44 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:44 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:50 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:50 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:50 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:56 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:25:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:25:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:00 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:13 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:13 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:13 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:25 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:25 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:25 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:31 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:31 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:31 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:36 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:41 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:41 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:41 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:46 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:51 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:26:51 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:26:51 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:21 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:27:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:21 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:27 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:27:28 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:28 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:34 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:27:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:34 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:44 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:27:44 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:44 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:50 - PHP Warning:  mysqli::__construct(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 7
+2019-09-20 8:27:50 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
+2019-09-20 8:27:50 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp123\htdocs\git\perfume\system\library\db\mysqli.php on line 10
